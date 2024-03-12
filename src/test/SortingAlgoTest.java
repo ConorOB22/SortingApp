@@ -9,7 +9,7 @@ import java.util.Random;
 
 /****
  ***** Created by CONOR O'BOYLE ON 12/03/2024
- ***** UPDATE PROGRAM DESCRIPTION HERE
+ *****  DESCRIPTION HERE
  ****/
 public class SortingAlgoTest
 {
