@@ -7,5 +7,4 @@ package main.sorting;
 public interface Sort
 {
     void sort (int[] data);
-
 }

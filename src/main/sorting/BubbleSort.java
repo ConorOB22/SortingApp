@@ -9,22 +9,22 @@ import java.util.Arrays;
 public class BubbleSort implements TimedSort
 {
    @Override
-   public void sort(int[] numbers) {
+   public void sort(int[] data) {
       long countComparisons = 0, countSwaps=0;
 
-      for (int out = numbers.length -1; out > 0; out--) {
+      for (int out = data.length -1; out > 0; out--) {
          for (int in = 0; in < out; in++) {
-            if (numbers[in] > numbers [in+1]) {
-               int tmp = numbers[in]; //swap items
-               numbers[in] = numbers[in+1];
-               numbers[in+1] = tmp;
+            if (data[in] > data [in+1]) {
+               int tmp = data[in]; //swap items
+               data[in] = data[in+1];
+               data[in+1] = tmp;
                countComparisons++;
                countSwaps++;
             }//if
          }//for
       }//for
 
-      System.out.println("The sorted array is: "+ Arrays.toString(numbers));
+      System.out.println("\nThe sorted array is: "+ Arrays.toString(data));
       System.out.println("countComparisons: "+ countComparisons);
       System.out.println("countSwaps: "+ countSwaps);
 

@@ -65,5 +65,4 @@ public class MergeSort implements TimedSort
       }
    }//merger helper method
 
-
 }//class
