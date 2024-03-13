@@ -46,58 +46,58 @@ public class InsertionSortTest
 //
 
    @Test
-   public void testInsertionSortRandom1000Int_1 () {
+   public void testInsertionSortRandom1000Int () {
       InsertionSort insertionSort = new InsertionSort();
-      insertionSort.doTimedSortNano(getRandomArray(1000));
+      insertionSort.doManySorts(3,getRandomArray(1000));
    }//testInsertionSortRandom1000Int_1
 
-   @Test
-   public void testInsertionSortRandom1000Int_2 () {
-      InsertionSort insertionSort = new InsertionSort();
-      insertionSort.doTimedSortNano(getRandomArray(1000));;
-   }//testInsertionSortRandom1000Int_2
+//   @Test
+//   public void testInsertionSortRandom1000Int_2 () {
+//      InsertionSort insertionSort = new InsertionSort();
+//      insertionSort.doTimedSortNano(getRandomArray(1000));;
+//   }//testInsertionSortRandom1000Int_2
+//
+//   @Test
+//   public void testInsertionSortRandom1000Int_3 () {
+//      InsertionSort insertionSort = new InsertionSort();
+//      insertionSort.doTimedSortNano(getRandomArray(1000));
+//   }//testInsertionSortRandom1000Int_3
 
    @Test
-   public void testInsertionSortRandom1000Int_3 () {
+   public void testInsertionSortRandom10000Int () {
       InsertionSort insertionSort = new InsertionSort();
-      insertionSort.doTimedSortNano(getRandomArray(1000));
-   }//testInsertionSortRandom1000Int_3
-
-   @Test
-   public void testInsertionSortRandom10000Int_1 () {
-      InsertionSort insertionSort = new InsertionSort();
-      insertionSort.doTimedSortNano(getRandomArray(10000));
+      insertionSort.doManySorts(3,getRandomArray(10000));
    }//testInsertionSortRandom10000Int_1
 
-   @Test
-   public void testInsertionSortRandom10000Int_2 () {
-      InsertionSort insertionSort = new InsertionSort();
-      insertionSort.doTimedSortNano(getRandomArray(10000));
-   }//testInsertionSortRandom10000Int_2
+//   @Test
+//   public void testInsertionSortRandom10000Int_2 () {
+//      InsertionSort insertionSort = new InsertionSort();
+//      insertionSort.doTimedSortNano(getRandomArray(10000));
+//   }//testInsertionSortRandom10000Int_2
+//
+//   @Test
+//   public void testInsertionSortRandom10000Int_3 () {
+//      InsertionSort insertionSort = new InsertionSort();
+//      insertionSort.doTimedSortNano(getRandomArray(10000));
+//   }//testInsertionSortRandom10000Int_3
 
    @Test
-   public void testInsertionSortRandom10000Int_3 () {
+   public void testInsertionSortRandom100000Int () {
       InsertionSort insertionSort = new InsertionSort();
-      insertionSort.doTimedSortNano(getRandomArray(10000));
-   }//testInsertionSortRandom10000Int_3
-
-   @Test
-   public void testInsertionSortRandom100000Int_1 () {
-      InsertionSort insertionSort = new InsertionSort();
-      insertionSort.doTimedSortNano(getRandomArray(100000));
+      insertionSort.doManySorts(3,getRandomArray(100000));
    }//testInsertionSortRandom100000Int_1
 
-   @Test
-   public void testInsertionSortRandom100000Int_2 () {
-      InsertionSort insertionSort = new InsertionSort();
-      insertionSort.doTimedSortNano(getRandomArray(100000));
-   }//testInsertionSortRandom100000Int_2
-
-   @Test
-   public void testInsertionSortRandom100000Int_3 () {
-      InsertionSort insertionSort = new InsertionSort();
-      insertionSort.doTimedSortNano(getRandomArray(100000));
-   }//testInsertionSortRandom100000Int_3
+//   @Test
+//   public void testInsertionSortRandom100000Int_2 () {
+//      InsertionSort insertionSort = new InsertionSort();
+//      insertionSort.doTimedSortNano(getRandomArray(100000));
+//   }//testInsertionSortRandom100000Int_2
+//
+//   @Test
+//   public void testInsertionSortRandom100000Int_3 () {
+//      InsertionSort insertionSort = new InsertionSort();
+//      insertionSort.doTimedSortNano(getRandomArray(100000));
+//   }//testInsertionSortRandom100000Int_3
 
 
 //

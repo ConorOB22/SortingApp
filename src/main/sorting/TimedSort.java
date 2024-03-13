@@ -9,7 +9,6 @@ import java.util.Arrays;
 public interface TimedSort extends Sort
 {
     default void doTimedSortNano(int[] data) {
-        System.out.println(Arrays.toString(data));
 
         long startTime = 0, endTime = 0, time = 0;
         startTime = System.nanoTime();
@@ -20,4 +19,12 @@ public interface TimedSort extends Sort
         time = endTime - startTime;
         System.out.println("Time = " + time);
     }//doTimedSortNano
+
+
+    default void doManySorts(int noOfTimes, int[] data) {
+        for (int i = 0; i < noOfTimes; i++) {
+            System.out.println("\n Array " + noOfTimes + " before sort: " + Arrays.toString(data));
+            doTimedSortNano(data);
+        }
+    }//doManySorts
 }//class

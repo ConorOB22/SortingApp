@@ -44,58 +44,58 @@ public class BubbleSortTest
 // #################################################################################
 //
     @Test
-    public void testBubbleSortRandom1000Int_1 () {
+    public void testBubbleSortRandom1000Int () {
         BubbleSort bubbleSort = new BubbleSort();
-        bubbleSort.doTimedSortNano(getRandomArray(1000));
+        bubbleSort.doManySorts(3,getRandomArray(1000));
     }//testBubbleSortRandom1000Int_1
 
-    @Test
-    public void testBubbleSortRandom1000Int_2 () {
-        BubbleSort bubbleSort = new BubbleSort();
-        bubbleSort.doTimedSortNano(getRandomArray(1000));
-    }//testBubbleSortRandom1000Int_2
+//    @Test
+//    public void testBubbleSortRandom1000Int_2 () {
+//        BubbleSort bubbleSort = new BubbleSort();
+//        bubbleSort.doTimedSortNano(getRandomArray(1000));
+//    }//testBubbleSortRandom1000Int_2
+//
+//    @Test
+//    public void testBubbleSortRandom1000Int_3 () {
+//        BubbleSort bubbleSort = new BubbleSort();
+//        bubbleSort.doTimedSortNano(getRandomArray(1000));
+//    }//testBubbleSortRandom1000Int_3
 
     @Test
-    public void testBubbleSortRandom1000Int_3 () {
+    public void testBubbleSortRandom10000Int () {
         BubbleSort bubbleSort = new BubbleSort();
-        bubbleSort.doTimedSortNano(getRandomArray(1000));
-    }//testBubbleSortRandom1000Int_3
+        bubbleSort.doManySorts(3,getRandomArray(10000));
+    }//testBubbleSortRandom10000Int
+
+//    @Test
+//    public void testBubbleSortRandom10000Int_2 () {
+//        BubbleSort bubbleSort = new BubbleSort();
+//        bubbleSort.doTimedSortNano(getRandomArray(10000));
+//    }//testBubbleSortRandom10000Int_2
+//
+//    @Test
+//    public void testBubbleSortRandom10000Int_3 () {
+//        BubbleSort bubbleSort = new BubbleSort();
+//        bubbleSort.doTimedSortNano(getRandomArray(10000));
+//    }//testBubbleSortRandom10000Int_3
 
     @Test
-    public void testBubbleSortRandom10000Int_1 () {
+    public void testBubbleSortRandom100000Int () {
         BubbleSort bubbleSort = new BubbleSort();
-        bubbleSort.doTimedSortNano(getRandomArray(10000));
-    }//testBubbleSortRandom10000Int_1
-
-    @Test
-    public void testBubbleSortRandom10000Int_2 () {
-        BubbleSort bubbleSort = new BubbleSort();
-        bubbleSort.doTimedSortNano(getRandomArray(10000));
-    }//testBubbleSortRandom10000Int_2
-
-    @Test
-    public void testBubbleSortRandom10000Int_3 () {
-        BubbleSort bubbleSort = new BubbleSort();
-        bubbleSort.doTimedSortNano(getRandomArray(10000));
-    }//testBubbleSortRandom10000Int_3
-
-    @Test
-    public void testBubbleSortRandom100000Int_1 () {
-        BubbleSort bubbleSort = new BubbleSort();
-        bubbleSort.doTimedSortNano(getRandomArray(100000));
+        bubbleSort.doManySorts(3,getRandomArray(100000));
     }//testBubbleSortRandom100000Int_1
 
-    @Test
-    public void testBubbleSortRandom100000Int_2 () {
-        BubbleSort bubbleSort = new BubbleSort();
-        bubbleSort.doTimedSortNano(getRandomArray(100000));
-    }//testBubbleSortRandom100000Int_2
-
-    @Test
-    public void testBubbleSortRandom100000Int_3 () {
-        BubbleSort bubbleSort = new BubbleSort();
-        bubbleSort.doTimedSortNano(getRandomArray(100000));
-    }//testBubbleSortRandom100000Int_3
+//    @Test
+//    public void testBubbleSortRandom100000Int_2 () {
+//        BubbleSort bubbleSort = new BubbleSort();
+//        bubbleSort.doTimedSortNano(getRandomArray(100000));
+//    }//testBubbleSortRandom100000Int_2
+//
+//    @Test
+//    public void testBubbleSortRandom100000Int_3 () {
+//        BubbleSort bubbleSort = new BubbleSort();
+//        bubbleSort.doTimedSortNano(getRandomArray(100000));
+//    }//testBubbleSortRandom100000Int_3
 
 
 //
