@@ -1,5 +1,6 @@
 package test;
 
+import main.sorting.GetArrays;
 import main.sorting.InsertionSort;
 import main.sorting.MergeSort;
 import org.junit.Test;
@@ -10,7 +11,7 @@ import java.util.Random;
  ***** Created by CONOR O'BOYLE ON 12/03/2024
  *****  DESCRIPTION HERE
  ****/
-public class MergeSortTest
+public class MergeSortTest extends GetArrays
 {
 
 //
@@ -120,45 +121,5 @@ public class MergeSortTest
       MergeSort mergeSort = new MergeSort();
       mergeSort.doTimedSortNano(getReversedArray(100000));
    }//testMergeSortReversed10000Int
-
-
-//
-// #################################################################################
-// ##############################    METHODS    ###################################
-// #################################################################################
-//
-
-   public static int[] getSortedArray(int length )
-   {
-      int[] sortedArray = new int[length];
-
-      for (int i = 0; i < sortedArray.length; i++)
-      {
-         sortedArray[i] = i + 1;
-      }
-//        System.out.println(Arrays.toString(sortedArray));
-      return sortedArray;
-   }//getSortedArray
-
-   public static int[] getRandomArray(int length ) {
-      Random random = new Random();
-      int[] randomArray = new int[length];
-
-      for (int i = 0; i < randomArray.length; i++) {
-         randomArray[i] = random.nextInt(length + 1);
-      }
-
-      return randomArray;
-   }//getRandomArray
-
-
-   public static int[] getReversedArray(int length) {
-      int[] reversedArray = new int[length];
-
-      for(int i = 0; i < length; i++) {
-         reversedArray[i] = length - i;
-      }
-      return reversedArray;
-   }//getReversedArray
 
 }//class

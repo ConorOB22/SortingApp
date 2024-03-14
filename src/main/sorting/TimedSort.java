@@ -20,11 +20,4 @@ public interface TimedSort extends Sort
         System.out.println("Time = " + time);
     }//doTimedSortNano
 
-
-    default void doManySorts(int noOfTimes, int[] data) {
-        for (int i = 0; i < noOfTimes; i++) {
-            System.out.println("\n Array " + noOfTimes + " before sort: " + Arrays.toString(data));
-            doTimedSortNano(data);
-        }
-    }//doManySorts
 }//class
