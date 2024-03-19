@@ -24,9 +24,8 @@ public class BubbleSort implements TimedSort
          }//for
       }//for
 
-      System.out.println("\nThe sorted array is: "+ Arrays.toString(data));
       System.out.println("countComparisons: "+ countComparisons);
       System.out.println("countSwaps: "+ countSwaps);
-
+      System.out.println();
    }//bubbleSort
 }//class

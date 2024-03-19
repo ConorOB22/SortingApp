@@ -1,5 +1,7 @@
 package main.sorting;
 
+import java.util.Arrays;
+
 /****
  ***** Created by CONOR O'BOYLE ON 12/03/2024
  ***** UPDATE PROGRAM DESCRIPTION HERE
@@ -32,6 +34,7 @@ public class MergeSort implements TimedSort
       sort(leftArray); //recursion
       sort(rightArray);//recursion
       merge(leftArray, rightArray, data);
+
    }// merge sort
 
    private void merge(int[] leftArray, int[] rightArray, int[] array) {
@@ -64,5 +67,6 @@ public class MergeSort implements TimedSort
          r++;
       }
    }//merger helper method
+
 
 }//class
